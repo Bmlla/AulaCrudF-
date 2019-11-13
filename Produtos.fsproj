@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DBConfig.fs" />
+    <Compile Include="ProdutoCreate.fs" />
+    <Compile Include="ProdutoRead.fs" />
+    <Compile Include="ProdutoDelete.fs" />
+    <Compile Include="ProdutoUpdate.fs" />
+    <Compile Include="ProdutoHandler.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="mongocsharpdriver" Version="2.9.3" />
+    <PackageReference Include="MongoDB.FSharp" Version="0.1.0" />
+  </ItemGroup>
+</Project>
